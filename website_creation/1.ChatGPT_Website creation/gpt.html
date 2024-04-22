@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cellar - Your Phone Store</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .header {
+      background-color: #333;
+      color: #fff;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .menu {
+      display: none;
+    }
+    .menu ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .menu ul li {
+      display: inline;
+      margin-left: 20px;
+    }
+    .toggle-btn {
+      cursor: pointer;
+      background-color: transparent;
+      border: none;
+      color: #fff;
+      font-size: 18px;
+    }
+    .content {
+      padding: 20px;
+    }
+    .product {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    .product img {
+      width: 200px;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Cellar</h1>
+  <button class="toggle-btn" onclick="toggleMenu()">Menu</button>
+  <div class="menu">
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#products">Products</a></li>
+    </ul>
+  </div>
+</div>
+
+<div class="content">
+  <h2 id="about">About Cellar</h2>
+  <p>Welcome to Cellar, your destination for the latest smartphones. We strive to provide the best selection of phones at competitive prices.</p>
+
+  <h2 id="products">Our Products</h2>
+  <div class="products">
+    <div class="product">
+      <img src="https://via.placeholder.com/200" alt="Phone 1">
+      <p>Phone 1 Description</p>
+    </div>
+    <div class="product">
+      <img src="https://via.placeholder.com/200" alt="Phone 2">
+      <p>Phone 2 Description</p>
+    </div>
+    <div class="product">
+      <img src="https://via.placeholder.com/200" alt="Phone 3">
+      <p>Phone 3 Description</p>
+    </div>
+  </div>
+</div>
+
+<script>
+  function toggleMenu() {
+    var menu = document.querySelector('.menu');
+    if (menu.style.display === 'none') {
+      menu.style.display = 'block';
+    } else {
+      menu.style.display = 'none';
+    }
+  }
+</script>
+
+</body>
+</html>

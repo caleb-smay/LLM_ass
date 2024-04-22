@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cellar - Selling Phones</title>
+    <style>
+        /* CSS for the header */
+        .header {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .header a {
+            color: white;
+            text-decoration: none;
+            margin-right: 10px;
+        }
+
+        .toggle-button {
+            background-color: #555;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+
+        /* CSS for the product images */
+        .product-images {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .product-image {
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+    <script>
+        // JavaScript for the toggle button
+        const toggleButton = document.querySelector('.toggle-button');
+        const header = document.querySelector('.header');
+
+        toggleButton.addEventListener('click', () => {
+            header.classList.toggle('hidden');
+        });
+    </script>
+</head>
+<body>
+    <div class="header">
+        <a href="#">About</a>
+        <a href="#">Products</a>
+        <button class="toggle-button">Toggle Header</button>
+    </div>
+    <div class="product-images">
+        <div class="product-image" style="background-image: url('product1.jpg');"></div>
+        <div class="product-image" style="background-image: url('product2.jpg');"></div>
+        <div class="product-image" style="background-image: url('product3.jpg');"></div>
+    </div>
+</body>
+</html>

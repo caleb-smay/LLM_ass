@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .header {
+            background-color: #f8f9fa;
+            padding: 20px;
+            text-align: center;
+        }
+        .header button {
+            float: right;
+        }
+        .header-links {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Cellar</h1>
+        <button onclick="toggleHeaderLinks()">Toggle Header Links</button>
+        <div id="header-links" class="header-links">
+            <a href="#about">About</a>
+            <a href="#products">Products</a>
+        </div>
+    </div>
+    <div class="products">
+        <img src="#" alt="Product Image 1">
+        <img src="#" alt="Product Image 2">
+        <!-- Add more product images as needed -->
+    </div>
+
+    <script>
+        function toggleHeaderLinks() {
+            var x = document.getElementById("header-links");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

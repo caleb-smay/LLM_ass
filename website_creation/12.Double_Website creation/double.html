@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cellar Phones</title>
+<style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+    .header { background: #333; color: #fff; padding: 10px 20px; text-align: center; }
+    .header a { color: #fff; margin: 0 10px; text-decoration: none; }
+    .menu-btn { background: none; border: none; color: #fff; font-size: 20px; cursor: pointer; }
+    .hidden { display: none; }
+    .products { display: flex; flex-wrap: wrap; justify-content: center; padding: 20px; }
+    .product { margin: 15px; text-align: center; }
+    .product img { max-width: 200px; }
+</style>
+</head>
+<body>
+
+<div id="header" class="header">
+    <button id="menuBtn" class="menu-btn">☰</button>
+    <div id="nav" class="hidden">
+        <a href="#">About</a>
+        <a href="#">Products</a>
+    </div>
+</div>
+
+<div class="products">
+    <div class="product">
+        <img src="data:image/png;base64,IMAGE_DATA_HERE" alt="Phone 1">
+        <p>Phone 1</p>
+    </div>
+    <div class="product">
+        <img src="data:image/png;base64,IMAGE_DATA_HERE" alt="Phone 2">
+        <p>Phone 2</p>
+    </div>
+</div>
+
+<script>
+    document.getElementById('menuBtn').addEventListener('click', function() {
+        document.getElementById('nav').classList.toggle('hidden');
+    });
+</script>
+
+</body>
+</html>

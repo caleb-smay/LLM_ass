@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cellar - Phone Store</title>
+    <style>
+        /* CSS styles go here */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .toggle-button {
+            display: none;
+        }
+
+        .toggle-button-label {
+            display: block;
+            background-color: #555;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .toggle-button:checked+.toggle-button-label {
+            background-color: #333;
+        }
+
+        .toggle-menu {
+            display: none;
+        }
+
+        .toggle-button:checked~.toggle-menu {
+            display: block;
+        }
+
+        .product-image {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <input type="checkbox" id="toggle" class="toggle-button">
+        <label for="toggle" class="toggle-button-label">Menu</label>
+        <nav class="toggle-menu">
+            <a href="#about">About</a>
+            <a href="#products">Products</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Welcome to Cellar - Your Phone Store</h1>
+        <section id="about">
+            <h2>About Cellar</h2>
+            <p>Cellar is a leading provider of high-quality phones. We offer a wide range of smartphones and accessories to suit your needs.</p>
+        </section>
+
+        <section id="products">
+            <h2>Our Products</h2>
+            <div>
+                <img src="https://example.com/product1.jpg" alt="Product 1" class="product-image">
+                <img src="https://example.com/product2.jpg" alt="Product 2" class="product-image">
+                <!-- Add more product images here -->
+            </div>
+        </section>
+    </main>
+
+    <script>
+        // JavaScript code goes here (if needed)
+    </script>
+</body>
+
+</html>
