@@ -22,7 +22,7 @@ GitHub Copilot (was not able to access)
 
 [Phind](https://caleb-smay.github.io/LLM_ass/website_creation/10.Phind_Website%20creation/phind.html)
 
-[Blackbox](https://caleb-smay.github.io/LLM_ass/website_creation/11.Blackbox_Website%20creation/)
+[Blackbox](https://caleb-smay.github.io/LLM_ass/website_creation/11.Blackbox_Website%20creation/blackbox.html)
 
-[Double](https://caleb-smay.github.io/LLM_ass/website_creation/12.Double_Website%20creation/)
+[Double](https://caleb-smay.github.io/LLM_ass/website_creation/12.Double_Website%20creation/double.html)
 
